@@ -32,9 +32,3 @@ jobs:
           docker build -t young0319/2025cloud:app1-git-${{ env.SHORT_SHA }} -t young0319/2025cloud:app1-latest ./app1
           docker push young0319/2025cloud:app1-git-${{ env.SHORT_SHA }}
           docker push young0319/2025cloud:app1-latest
-
-      - name: Build and push app2
-        run: |
-          docker build -t young0319/2025cloud:app2-git-${{ env.SHORT_SHA }} -t young0319/2025cloud:app2-latest ./app2
-          docker push young0319/2025cloud:app2-git-${{ env.SHORT_SHA }}
-          docker push young0319/2025cloud:app2-latest
