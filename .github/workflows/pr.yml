@@ -26,7 +26,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t young0319/2025cloud:test .
+        run: docker build -t young0319/2025cloud:test ./fail_pr
 
       - name: Push Docker image
         run: docker push young0319/2025cloud:test
